@@ -1,0 +1,339 @@
+﻿/* 
+    Created on : 04/11/2015, 09:42:39 AM
+    Author     : dperez
+*/
+@font-face {
+    font-family: LibreSans;
+    src: url(../Fonts/LibreSansSerifSSi.ttf);
+}
+
+a, a:visited, a:link{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div {
+    font-family: LibreSans;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+fieldset{
+    border-color: rgb(168, 207, 69);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+legend{
+    font-size: 16px;
+    font-weight: bold;
+}
+.div-boton {
+    text-align: right;
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 98%;
+    border-bottom: 1px solid #96c841;
+    border-right: 1px solid #96c841;
+    border-radius: 0px 0px 4px;
+}
+.div-boton-left {
+    text-align: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 50%;
+    border-bottom: 1px solid #96c841;
+    border-left: 1px solid #96c841;
+    border-radius: 0px 0px 4px;
+}
+.div-input {
+    height: 20px;
+}
+
+.link{
+    color:white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.label {
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    width: 150px;
+    margin-left: 10px;
+    background-color: #2c5697;
+}
+div .titulo-fondo{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+div .sub-titulo-fondo{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+.titulo-grande{
+    font-size: 16px;
+    color: white;
+}
+.titulo-grande-header{
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+.contentBody {
+    position: absolute;
+    padding: 0px 30px 0 10px;
+    top: 115px;
+    bottom: 0;
+    height: 100%;
+    left: 200px;
+    right: 0;
+    overflow: auto;
+    text-align: center; 
+    z-index: -1;
+}
+
+.contenedor-5050{
+    width:98%;
+    display: inline-flex;
+}
+
+.contenedor-40{
+    width:40%; 
+    height:30%;
+    padding: .5% .5% .5% .5%;
+}
+.contenedor-50{
+    width:50%; 
+    height:30%;
+    padding: .5% .5% .5% .5%;
+}
+.contenedor-60{
+    width:60%; 
+    height:30%;
+    padding: .5% .5% .5% .5%;
+}
+
+#iconContainer{
+    margin-top: 12px;
+    margin-left: 40px;
+    float:left;
+}
+.fondo-azul{
+    background-color: #2c5697; /* azul pantone marfrig RGB 44,86,151 */    
+}
+
+.fondo-verde{
+    background-color: #96c841; /* RGB(150, 200, 65) */
+}
+
+.input {
+    border-style: solid;
+    border-color: #96c841;
+    border-width: 1px;
+    width: 97%;
+    margin: 1% 1% 1% 1%;
+    height:25px;
+    font-family: LibreSans;
+    font-size: 18px;
+    color:#2c5697;
+    background-color: #F4FEE9;
+}
+.input:focus{
+    width: 97%;
+    background-color: #A8CF45;
+    color: #ffffff;
+}
+
+.boton-input{
+    width: 25%;
+    height: 40px;
+    font-family: LibreSans;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #668CC8;
+    background-color:#2c5697;
+    color: white;
+    border-width: 2px;
+    border-color: #96c841;
+    cursor: pointer;
+}
+
+.boton-input:hover{
+    background-color: #96c841;
+    border-color: white;
+    color: #2c5697;
+    box-shadow: #999 1px 1px 1px 1px;
+}
+
+
+.output {
+    border: none;
+    width: 97%;
+    margin: 5px 5px 5px 5px;
+    height:25px;
+    font-family: LibreSans;
+    font-size: 18px;
+    color:#2c5697;
+    background-color: #F4FEE9;
+}
+
+.alerta{
+    background-color: #ff6666  !important;
+    color: white !important;
+    width: 150px;
+    text-align: center !important;
+}
+
+#divLogin {
+    width: 150px;
+    margin-top: 10px;
+    float: right;
+    padding-right: 10px;
+}
+
+#header{
+    height: 100px;
+    width: 100%;
+    -webkit-box-shadow:#999999 0px 10px 5px;
+    -moz-box-shadow: #999999 0px 10px 5px;
+    box-shadow: #999999 0px 10px 5px;
+}
+#menuApp{
+    width: 15%;
+    box-shadow: 5px 10px 5px #999;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 108px;
+    left: 8px;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 99; 
+    -webkit-box-shadow:#999999 0px 15px 5px;
+    -moz-box-shadow: #999999 0px 15px 5px;
+    box-shadow: #999999 0px 15px 5px;
+    overflow-y: auto;
+}
+
+.divMenuItem{
+    border: 1px solid;
+    border-color: #668CC8;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    height: 40px;
+    padding-top: 5%;
+}
+
+.divMenuItem:hover{
+    background-color: #96c841;
+    border-color: white;
+    color: white;
+    box-shadow: #999 1px 1px 1px 1px;
+}
+
+.error {
+    flex: auto;
+    border: solid;
+    border-width: 1px;
+    border-color: red;
+    background-color: #ff6666;
+    padding-left: 10px;
+    margin-bottom: 1%;
+    width: 99%;
+}
+
+.info {
+    flex: auto;
+    border: solid;
+    border-width: 1px;
+    border-color: green;
+    background-color: #84F951;
+    padding-left: 10px;
+    margin-bottom: 1%;
+}
+
+.contenido{
+    margin-top: 5%;
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.posicion-boton-contenido{
+    text-align: right;
+    margin-right: 1%;
+}
+
+.select-opt-menu {
+    width: 97%;
+    margin: 10px 0px;
+    height: 25px;
+    font-size: 16px;
+    font-family: LibreSans;
+    border: 1px solid  #A8CF45;
+}
+
+.select-opt-menu:focus{
+    width: 97%;
+    background-color: #A8CF45;
+    color: #ffffff;   
+}
+
+.select-opt {
+    width: 97%;
+    margin: 10px 10px 10px 10px;
+    height: 25px;
+    font-size: 14px;
+    font-family: LibreSans;
+}
+
+.contenedor-carga{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #060606;
+    color: #F5F5F5;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+.carga{
+    position:absolute; 
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    padding: 1%;
+    color:#96c841;
+    text-align: center;
+    z-index: 9999999;
+}
+
+.leyenda-grafico{
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+    height: 15px;
+    border-right: 20px solid;
+    border-left: 20px solid;
+    font-weight: bold;
+}

@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="ControlSuministrosASP.Net.Views.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/Content/CSS/Base.css" />
+    <link rel="stylesheet" href="/Content/CSS/tablas.css" />
+    <link rel="icon" href="/Content/Images/favicon.ico" />
+
+    <script src="/Content/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="/Content/Scripts/IndicadorCarga.js"></script>
+    <script src="/Content/Scripts/Chart.js"></script>
+    <script src="/Content/Scripts/Chart.min.js"></script>
+    <!--<script src="/Content/Scripts/Datepicker.js"></script>-->
+
+    <title>Control de Suministros</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <div id="loading-container" class="contenedor-carga">
+        <div class="carga">
+            <img height="100" src="/Content/Images/loading-wheel.gif" />
+            <div>Cargando...</div>
+        </div>
+    </div>
+    <div id="loading" class="carga" style="display: none;">
+        <img height="100" src="/Content/Images/loading-wheel.gif" />
+        <div>Cargando...</div>
+    </div>
+    <form id="form1" runat="server">
+        <div>
+            <div id="header" class="fondo-azul">
+                <div id="iconContainer">
+                    <a href="/Views/Index.xhtml">
+                        <img title="Inicio" src="/Content/Images/MarfrigLogo.png" width="110" alt="logo marfrig" />
+                    </a>
+                </div>
+                <div class="titulo-grande-header" style="padding-top: 30px;">CONTROL DE SUMINISTROS, MATERIALES, REACTIVOS Y MEDIOS DE CULTIVO</div>
+            </div>
+        </div>
+        <div id="menuApp" class="menuApp fondo-azul">
+            <div id="frmMenu">
+                <asp:Panel CssClass="titulo-grande" runat="server">
+                    <div class="titulo-fondo">
+                        <asp:LinkButton ID="btnEditarOperario" runat="server" OnClick="btnEditarOperario_Click">
+                            <asp:Label runat="server" ID="NombreLogueado" />
+                        </asp:LinkButton>
+                    </div>
+                    <div class="sub-titulo-fondo">(<asp:Label runat="server" ID="PermisoLogueado" />)</div>
+                    <a class="link" href="/Views/Index.aspx">
+                        <div class="divMenuItem">
+                            <div>Inicio</div>
+                        </div>
+                    </a>
+                    <a class="link" href="/Views/Operarios/ListadoOperarios.aspx">
+                        <div class="divMenuItem">
+                            <div>Adm. Operarios</div>
+                        </div>
+                    </a>
+                    <a class="link" href="/Views/Proveedores/ListadoProveedores.aspx">
+                        <div class="divMenuItem">
+                            <div>Adm. Proveedores</div>
+                        </div>
+                    </a>
+                    <a class="link" href="/Views/Suministros/ListadoSuministros.aspx">
+                        <div class="divMenuItem">
+                            <div>Adm. Suministros</div>
+                        </div>
+                    </a>
+                    <a class="link" href="/Views/Suministros/IngresoSuministro.aspx">
+                        <div class="divMenuItem">
+                            <div>Ingreso Suministros</div>
+                        </div>
+                    </a>
+                    <a class="link" href="/Views/Suministros/SalidaSuministro.aspx">
+                        <div class="divMenuItem">
+                            <div>Salida Suministros</div>
+                        </div>
+                    </a>
+                    <a class="link" href="/Views/Suministros/ListadoEstadoSuministros.aspx">
+                        <div class="divMenuItem">
+                            <div>Estado Suministros</div>
+                        </div>
+                    </a>
+                    <asp:LinkButton runat="server" ID="btnSalir" OnClick="btnSalir_Click" CausesValidation="false" CssClass="link">
+                    <div class="divMenuItem">
+                        <div>Salir</div>
+                    </div>
+                    </asp:LinkButton>
+                </asp:Panel>
+            </div>
+        </div>
+        <div class="contentBody">
+            <div class="contenido">
+                <asp:ContentPlaceHolder ID="page_content" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
